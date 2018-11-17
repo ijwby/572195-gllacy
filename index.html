@@ -3,10 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
+      </a>
+      <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Каталог</a>
+            <ul class="sub-menu">
+               <li><a class="sub-menu-title" href="#">Новинки</a></li>
+               <li><a href="catalog.html">Сливочное</a></li>
+               <li><a class="sub-menu-current">Щербеты</a></li>
+               <li><a href="#">Фруктовый лед</a></li>
+               <li><a href="#">Мелорин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
+      <div class="header-buttons">
+        <a class="button-search" href="#">Поиск</a>
+        <!-- Здесь будет форма -->
+        <a class="button-login" href="#">Вход</a>
+        <!-- Здесь будет форма -->
+        <a class="button-basket" href="#">Пусто</a>
+      </div>
+      </nav>
+    </header>
 
-  </body>
-</html>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
+
+    <!-- Блоки, которые размечать не нужно -->
+
+    <article class="features">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+      <div class="features-left">
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      </div>
+      <div class="features-right">
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+      </div>
+    </article>
+
+    <article class="preview">
+      <h3>Новое в нашем блоге</h3>
+        <a class="preview-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
+    </article>
+
+    <section class="newsletter">
+      <h3 class="visually-hidden">Рассылка</h3>
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+      <!-- Здесь будет форма -->
+    </section>
+
+    <!-- Блоки, которые размечать не нужно -->
+
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+      <section class="footer-info">
+        <img src="img/Heart.svg" width="15" height="13" alt="Сердце"><a href="#"><span class="footer-documents-left">Для поставщиков</span></a>
+        <a href="#"><span class="footer-documents-left">О производстве</span></a>
+        <a href="#"><span class="footer-documents-right">Наши документы</span></a>
+        <a href="#"><span class="footer-documents-right">Экологические стандарты</span></a>
+      </section>
+      <section class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html-academy-small.svg" width="108" height="39" alt="HTML Academy">
+        </a>
+        <p>Сделано в <a class="footer-href" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>©2016</p>
+      </section>
+    </footer>
+    </body>
+  </html>
