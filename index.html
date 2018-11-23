@@ -42,15 +42,39 @@
       <ul class="header-buttons">
         <li>
           <a class="button-search" href="#">Поиск</a>
-            <!-- Здесь будет форма -->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">
+              Поиск
+            </label>
+            <input class="search" id="search" type="text" name="search" placeholder="Что ищем?">
+          </form>
         </li>
         <li>
-        <a class="button-login" href="#">Вход</a>
-          <!-- Здесь будет форма -->
+          <a class="button-login" href="#">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="user-email">
+                Электронная почта
+              </label>
+              <input class="login-icon-user" id="user-email" type="text" name="email" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">
+                Пароль
+              </label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <button class="button" type="submit">
+              Войти
+            </button>
+            <div class="form-login-hrefs">
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="restore" href="#">Новая регистрация</a>
+            </div>
+          </form>
         </li>
         <li>
-        <a class="button-basket" href="#">2 товара</a>
-        <!-- Здесь будет форма -->
+          <a class="button-basket" href="#">Пусто</a>
         </li>
       </ul>
       </nav>
@@ -82,7 +106,27 @@
       <h3 class="visually-hidden">Рассылка</h3>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
          что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-      <!-- Здесь будет форма -->
+    </section>
+    <section class="modal modal-feedback">
+      <h3>Мы обязательно вам ответим!</h3>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="username">
+              Ваше имя
+            </label>
+            <input class="feedback-username" id="username" type="text" name="username" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-email">
+              Ваша электронная почта
+            </label>
+            <input class="feedback-email" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <textarea name="comment" id="comment-field" rows="10">Напишите что-нибудь...</textarea>
+          <button class="button" type="submit">
+            Отправить
+          </button>
+      </form>
     </section>
      <!-- Блоки, которые размечать не нужно -->
     </main>
