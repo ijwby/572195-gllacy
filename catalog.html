@@ -39,12 +39,88 @@
             <a href="#">О нас</a>
           </li>
         </ul>
+        <ul class="header-buttons">
+          <li>
+            <a class="button-search" href="#">Поиск</a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="search">
+                Поиск
+              </label>
+              <input class="search" id="search" type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li>
+            <a class="button-login" href="#">Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-email">
+                  Электронная почта
+                </label>
+                <input class="login-icon-user" id="user-email" type="text" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">
+                  Пароль
+                </label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <button class="button" type="submit">
+                Войти
+              </button>
+              <div class="form-login-hrefs">
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="restore" href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </li>
+          <li>
+            <a class="button-basket" href="#">2 товара</a>
+            <div class="cart-block">
+              <table class="cart-item">
+                <tr>
+                  <td>
+                    <button class="cart-close-button" type="submit" value="Оформить заказ">
+                      Удалить товар
+                    </button>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <img src="img/ice-cream/ice-cream-1.jpg" class="cart-item-image" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </a>
+                    </td>
+                  <td class="item-price">1,5 кг * <span>200 руб.</span></td>
+                  <td class="item-price">300 руб.</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="cart-close-button" type="submit" value="Оформить заказ">
+                    Удалить товар
+                    </button>
+                  </td>
+                  <td>
+                    <a href="#">
+                      <img src="img/ice-cream/ice-cream-3.jpg" class="cart-item-image" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </a>
+                  </td>
+                  <td class="item-price">1,5 кг * <span>300 руб.</span></td>
+                  <td class="item-price">450 руб.</span></td>
+                </tr>
+              </table>
+              <hr>
+              <p class="total-price">Итого: 750 руб.</p>
+              <button class="site-button submit-button" type="submit" value="Оформить заказ">
+                Оформить заказ
+              </button>
+            </div>
+          </li>
+        </ul>
       </nav>
       <div class="header-contacts">
         <p class="header-timetable">С 10 до 20, ежедневно</p>
         <p class="header-phone">8 812 450-25-25</p>
       </div>
     </header>
+
      <main class="container">
       <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
@@ -262,23 +338,23 @@
             <a href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a href="#">4</a>
+            <a href="#">5</a>
           </li>
         </ul>
      </main>
      <footer class="main-footer">
        <ul class="footer-social">
          <li>
-           <a class="social-button" href="#">Твиттер</a>
+           <a class="social-button" href="#" arealabel="Аккаунт Глейси в Твиттере"></a>
          </li>
          <li>
-           <a class="social-button" href="#">Инстаграм</a>
+           <a class="social-button" href="#" arealabel="Аккаунт Глейси в Инстаграм"></a>
          </li>
          <li>
-           <a class="social-button" href="#">Фейсбук</a>
+           <a class="social-button" href="#" arealabel="Аккаунт Глейси на Фейсбуке"></a>
          </li>
          <li>
-           <a class="social-button" href="#">Вконтакте</a>
+           <a class="social-button" href="#" arealabel="Аккаунт Глейси в Вконтакте"></a>
          </li>
        </ul>
        <ul class="footer-info">
