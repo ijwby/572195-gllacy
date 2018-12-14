@@ -134,7 +134,7 @@
                 </table>
                 <div class="price-wrapper">
                   <p class="total-price">Итого: 750 руб.</p>
-                  <button class="site-button button" type="submit" value="Оформить заказ">
+                  <button class="button cart-block-button" type="submit" value="Оформить заказ">
                     Оформить заказ
                   </button>
                 </div>
@@ -174,9 +174,6 @@
               </option>
               <option>
                 по новизне
-              </option>
-              <option>
-                по жирности
               </option>
             </select>
           </fieldset>
@@ -384,12 +381,12 @@
 
           <li class="catalog-item">
             <a class="catalog-item-image" href="#">
-              <img src="img/ice-cream/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочкаи шоколада">
+              <img src="img/ice-cream/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
             <p class="catalog-item-price">440₽<span class="catalog-item-weight">/кг</span></p>
             <h3>
               <a href="#" class="catalog-item-title">
-                Сливочно-ванильное с кусочкаи шоколада
+                Сливочно-ванильное с кусочками шоколада
               </a>
             </h3>
             <a class="button button-catalog" href="#">
@@ -445,11 +442,13 @@
       </section>
 
       <ul class="pagination-list">
-      <!-- <li> -->
-        <!-- <a class="prev disabled" href="#prev">Назад</a> -->
-      <!-- </li> -->
       <li>
-        <a class="pagination-item pagination-item-current" href="#">1</a>
+        <a class="prev disabled" href="#prev">
+          <span class="visually-hidden">Назад</span>
+        </a>
+      </li>
+      <li>
+        <a class="pagination-item pagination-item-current">1</a>
       </li>
       <li>
         <a class="pagination-item" href="#">2</a>
@@ -463,9 +462,11 @@
       <li>
         <a class="pagination-item" href="#">5</a>
       </li>
-      <!-- <li> -->
-        <!-- <a class="next" href="#next">Вперед</a> -->
-      <!-- </li> -->
+      <li>
+        <a class="next" href="#next">
+          <span class="visually-hidden">Вперед</span>
+        </a>
+      </li>
       </ul>
       <div class="line"></div>
     </main>
@@ -542,7 +543,9 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">
             <img src="img/logo-htmlacademy-small.svg" alt="htmlacademy-logo" width="113" height="38">
           </a>
-          <span class="copyright-text">Сделано в <a class="footer-links" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
+          <span class="copyright-text">Сделано в
+            <a class="footer-links" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+          </span>
         </div>
       </div>
     </footer>
