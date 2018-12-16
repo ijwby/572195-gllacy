@@ -1054,20 +1054,43 @@ input[type="radio"].visually-hidden {
   z-index: 5;
 
   width: 477px;
-  box-sizing: border-box;
 
   background-color: #f8f7f4;
   border-radius: 10px;
+}
 
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+  0%     { transform: translate(-50%, -50%) translateY(1000px); }
+  70%    { transform: translate(-50%, -50%) translateY(-40px);  }
+  90%    { transform: translate(-50%, -50%) translateY(10px);   }
+  100%   { transform: translate(-50%, -50%) translateY(0);      }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100%                 {transform: translate(-50%, -50%) translateX(0));     }
+  10%, 30%, 50%, 70%, 90%  {transform: translate(-50%, -50%) translateX(-10px);  }
+  20%, 40%, 60%, 80%       {transform: translate(-50%, -50%) translateX(10px);   }
 }
 
 .modal-close {
   position: absolute;
-  top: 16px;
-  right: 26px;
+  top: 12px;
+  right: 8px;
 
   background-color: transparent;
   border: 0;
+  outline: 0;
   cursor: pointer;
 }
 
@@ -1076,8 +1099,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 16px;
-  right: 26px;
+  top: 12px;
+  right: 8px;
 
   width: 22px;
   height: 3px;
@@ -1202,27 +1225,46 @@ input[type="radio"].visually-hidden {
 
 .button-modal-feedback {
   margin-left: 322px;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   font-size: 18px;
   line-height: 24px;
 }
 
-/* .overlay { */
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
-  /* z-index: 100; */
+.overlay {
+  display: none;
+}
 
-  /* width: 100%; */
-  /* height: 100%; */
-/*  */
-  /* background-color: rgba(99, 115, 106, 0.6); */
-/* } */
+.overlay-show {
+  display: block;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(99, 115, 106, 0.6);
+}
+
+/* Карта */
+
+.index-map {
+  position: relative;
+  width: 1200px;
+  height: 430px;
+  background-color: #f8f7f4;
+}
 
 /* Форма обратной связи */
 
 .feedback {
+
+  position: absolute;
+  top: 62px;
+  right: 27px;
   width: 302px;
 
   color:#323232;
@@ -1358,7 +1400,6 @@ input[type="radio"].visually-hidden {
   background-color: #d1d0ce;
 }
 
-
 .cart-item td:first-child {
   padding-top: 20px;
 }
@@ -1382,6 +1423,7 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 0;
+  outline: 0;
 
   cursor: pointer;
 }
@@ -1932,8 +1974,8 @@ input[type="radio"].visually-hidden {
 /* Футер */
 
 .main-footer {
-  margin-top: 17px;
-  margin-bottom: 35px;
+  margin-top: 18px;
+  margin-bottom: 24px;
 }
 
 .main-footer .container {
@@ -2007,6 +2049,10 @@ input[type="radio"].visually-hidden {
  fill: #ffbc9e;
 }
 
+.footer-suppliers a {
+  font-weight: 700;
+}
+
 .suppliers {
   position: absolute;
   top: 3px;
@@ -2035,6 +2081,7 @@ input[type="radio"].visually-hidden {
   height: 37px;
 
   padding-left: 75px;
+  padding-bottom: 6px;
 }
 
 .footer-social,
