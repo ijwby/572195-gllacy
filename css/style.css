@@ -645,17 +645,11 @@ input[type="radio"].visually-hidden {
 /* Контакты */
 
 .header-contacts {
-  position: relative;
+  text-align: right;
 }
 
 .header-timetable {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-
   display: block;
-  margin-left: auto;
   margin-right: 0;
 
   font-size: 14px;
@@ -664,13 +658,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-phone {
-  position: absolute;
-  top: 20px;
-  right: 0;
-
   display: block;
-  margin-left: auto;
-  margin-right: 0;
 
   font-size: 22px;
   line-height: 24px;
@@ -1066,10 +1054,18 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes bounce {
-  0%     { transform: translate(-50%, -50%) translateY(1000px); }
-  70%    { transform: translate(-50%, -50%) translateY(-40px);  }
-  90%    { transform: translate(-50%, -50%) translateY(10px);   }
-  100%   { transform: translate(-50%, -50%) translateY(0);      }
+  0% {
+    transform: translate(-50%, -50%) translateY(1000px);
+  }
+  70% {
+    transform: translate(-50%, -50%) translateY(-40px);
+  }
+  90%  {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
+  100%   {
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
 
 .modal-error {
@@ -1078,15 +1074,24 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes shake {
-  0%, 100%                 {transform: translate(-50%, -50%) translateX(0));     }
-  10%, 30%, 50%, 70%, 90%  {transform: translate(-50%, -50%) translateX(-10px);  }
-  20%, 40%, 60%, 80%       {transform: translate(-50%, -50%) translateX(10px);   }
+  0%, 100% {
+    transform: translate(-50%, -50%) translateX(0));
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-50%, -50%) translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(-50%, -50%) translateX(10px);
+  }
 }
 
 .modal-close {
   position: absolute;
   top: 12px;
   right: 8px;
+
+  width: 22px;
+  height: 22px;
 
   background-color: transparent;
   border: 0;
@@ -1201,7 +1206,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-textarea:focus {
-  padding-left: 14px;
+  padding: 4px 14px;
 
   border: 2px solid #8fbdec;
   outline: none;
@@ -1417,9 +1422,11 @@ input[type="radio"].visually-hidden {
 
 .cart-close-button {
   position: relative;
+  bottom: 18px;
+  left: -8px;
 
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
 
   background-color: transparent;
   border: 0;
@@ -1433,8 +1440,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  bottom: 18px;
-  left: -9px;
+  bottom: 0;
+  left: 0;
 
   width: 13px;
   height: 1px;
