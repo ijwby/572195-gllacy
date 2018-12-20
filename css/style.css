@@ -97,11 +97,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-wrapper::before {
-  background-image: url("img/slide-2.png");
+  background-image: url("../img/slide-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/slide-3.png");
+  background-image: url("../img/slide-3.png");
 }
 
 .slide {
@@ -488,14 +488,12 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/entrance-white.svg");
   background-repeat: no-repeat;
-  /* background-position: 0 0; */
 }
 
 .button-login:hover::before,
 .button-login:focus::before {
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
-  /* background-position: 0 0; */
 }
 
 .login-dropdown {
@@ -1592,24 +1590,39 @@ input[type="radio"].visually-hidden {
 
 /* Сортировка */
 
-.sorting-filter {
-  height: 36px;
+.sorting-wrapper {
   width: 193px;
+  height: 36px;
   margin-top: 6px;
-  padding-left: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 168px;
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+.sorting-filter {
+  width: 215px;
+  height: 100%;
+  padding-left: 16px;
   padding-bottom: 4px;
 
   color: #ffffff;
 
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  border-radius: 30px;
 
   cursor: pointer;
 }
 
 .sorting-filter:hover {
   color: #323232;
+}
+
+.sorting-wrapper:hover {
+  background-image: url("../img/icon-down-dir-black.svg");
 }
 
 /* Цена */
@@ -1814,6 +1827,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   list-style: none;
+  font-weight: 500;
   color: #ffffff;
 }
 
